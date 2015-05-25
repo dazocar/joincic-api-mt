@@ -3,43 +3,46 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.13'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Pg is the Ruby interface to the {PostgreSQL RDBMS}
+# [http://www.postgresql.org/].
+# Read more: https://bitbucket.org/ged/ruby-pg
+gem 'pg', '~> 0.17.1'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+# An IRB alternative and runtime developer console.
+# Read more: https://github.com/pry/pry
+gem 'pry', '~> 0.9.12.6'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+# Create JSON structures via a Builder-style DSL.
+# Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0.5'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+# Trollop is a commandline option parser for Ruby that just gets out of your way.
+gem 'trollop', '~> 2.0'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'thin' #Version
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'net-http-persistent', '~> 2.9.4'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# A plugin for versioning Rails based RESTful APIs.
+# Read more: https://github.com/bploetz/versionist
+gem 'versionist', '~> 1.3.0'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'haml-rails', '0.9.0'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+gem 'squeel', '1.2.1'
+
+group :development do
+
+  # Rails application preloader.
+  # Read more: https://github.com/rails/spring
+  gem 'spring', '~> 1.1.2'
+
+  # gem 'letter_opener'
+
+  # YARD is a documentation generation tool for the Ruby programming language.
+  # It enables the user to generate consistent, usable documentation that can be
+  # exported to a number of formats very easily, and also supports extending for
+  # custom Ruby constructs such as custom class level definitions.
+  # Read more: https://github.com/lsegal/yard
+  gem 'yard', '~> 0.8.7.4'
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
