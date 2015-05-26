@@ -1,4 +1,6 @@
 class Admin::PeopleController < ApplicationController
+
+
   def create
   end
 

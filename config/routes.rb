@@ -17,8 +17,9 @@ JoincicApiMt::Application.routes.draw do
   namespace(:auxiliar, defaults: {format: :json}) do
 
     resources :joincics, only: [] do
-      get 'show_schools', on: :collection
       get 'get_school', on: :member
+      get 'get_country_schools', on: :member
+      get 'show_schools', on: :collection
     end
 
   end

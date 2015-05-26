@@ -1,4 +1,6 @@
 class Admin::CountriesController < ApplicationController
+
+
   def create
   end
 

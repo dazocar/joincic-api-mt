@@ -1,4 +1,6 @@
 class Admin::SchoolsController < ApplicationController
+
+
   def create
   end
 
