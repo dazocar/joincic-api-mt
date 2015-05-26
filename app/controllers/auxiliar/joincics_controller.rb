@@ -22,4 +22,11 @@ class Auxiliar::JoincicsController < ApplicationController
     render template: 'auxiliar/joincics/show.json.jbuilder'
   end
 
+  def get_school_students
+
+    # TO DO
+
+    render template: 'auxiliar/joincics/students_show.json.jbuilder'
+  end
+
 end

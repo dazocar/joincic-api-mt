@@ -19,6 +19,7 @@ JoincicApiMt::Application.routes.draw do
     resources :joincics, only: [] do
       get 'get_school', on: :member
       get 'get_country_schools', on: :member
+      get 'get_school_students', on: :member
       get 'show_schools', on: :collection
     end
 
