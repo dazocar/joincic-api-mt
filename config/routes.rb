@@ -20,6 +20,7 @@ JoincicApiMt::Application.routes.draw do
       get 'get_school', on: :member
       get 'get_country_schools', on: :member
       get 'get_school_students', on: :member
+      get 'get_active_students', on: :member
       get 'show_schools', on: :collection
     end
 
