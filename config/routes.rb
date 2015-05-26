@@ -7,7 +7,7 @@ JoincicApiMt::Application.routes.draw do
     # Directs /admin/RESOURCE/* to Admin::ProductsController
     # (app/controllers/admin/<RESOURCE>s_controller.rb)
 
-    resources :peoples, only: [:create, :index, :destroy]
+    resources :people, only: [:create, :index, :destroy]
     resources :schools, only: [:create, :index, :destroy]
     resources :countries, only: [:create, :index, :destroy]
 

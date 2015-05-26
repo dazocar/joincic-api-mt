@@ -201,7 +201,7 @@ main_countries = [138, 186, 191]
   @c1 = Country.create(name: c)
 end
 
-20.times do |s|
+10.times do |s|
   my_boolean = !my_boolean
   School.create(name: "school ##{s}", code: "code ##{s}",
                 country_id: main_countries[rand(0..2)], is_private: my_boolean)
@@ -211,5 +211,5 @@ end
   my_boolean = !my_boolean
   Person.create(first_name: "first_name ##{i}", last_name: "last_name ##{i}",
                 email: "email ##{i}", birth_date: DateTime.now,
-                school_id: rand(1..20), active: my_boolean)
+                school_id: rand(1..10), active: my_boolean)
 end

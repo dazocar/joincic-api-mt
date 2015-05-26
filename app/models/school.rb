@@ -1,5 +1,5 @@
 class School < ActiveRecord::Base
 
-  has_many :people
+  has_many :students, class_name: 'Person'
 
 end
