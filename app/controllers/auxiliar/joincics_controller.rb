@@ -22,6 +22,14 @@ class Auxiliar::JoincicsController < ApplicationController
     render template: 'auxiliar/joincics/show.json.jbuilder'
   end
 
+  def get_active_students
+    country_id = params[:id]
+    @students = Person.joins(:school)
+                        .where(active: true, schools: {country_id: country_id})
+
+    render template: 'auxiliar/joincics/students_show.json.jbuilder'
+  end
+
   def get_school_students
 
     # TO DO
